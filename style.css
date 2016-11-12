@@ -1,0 +1,21 @@
+.reveal a {
+    color: #fff;
+}
+
+.reveal a:hover {
+    color: #fc9813;
+    text-decoration: underline;
+}
+
+.reveal a.url {
+    color: #fc9813;
+}
+
+.reveal a.url:hover {
+    color: #fc9813;
+    text-decoration: underline;
+}
+
+body {
+    background-color: #164350;
+}
