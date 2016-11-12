@@ -1,0 +1,47 @@
+#+TITLE: Creating slides with Pandoc
+#+SUBTITLE: Beautiful presentations with reveal.js or beamer
+#+AUTHOR: John Doe
+#+DATE: 11.11.2016
+#+OPTIONS: H:9 todo:nil
+
+* Pandoc
+
+** Why Pandoc
+Reasons:
+- foo,
+- bar, and
+- baz.
+
+#+BEGIN_notes
+Might also want to mention ~fubar~
+#+END_notes
+
+** Filters
+Filters are
+- flexible,
+- writable in many languages, and
+- act on pandocs internal document representation.
+
+#+BEGIN_notes
+See library documentation for details.
+#+END_notes
+
+* Build Process
+** Makefiles
+- Makefile syntax is very old.
+- Nobody expected it to be around for so long.
+
+#+BEGIN_notes
+There are plenty of alternative build tools, use the one you like best.
+#+END_notes
+
+* Fin
+
+** Thanks.
+
+#+BEGIN_notes
+Don't forget to mention pandoc.
+#+END_notes
+
+** Questions?
+
