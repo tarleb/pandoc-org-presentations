@@ -5,19 +5,19 @@ all: talk.html talk.tex talk.pdf talk-handout.pdf talk-notes.pdf
 start: talk.html
 	sensible-browser $<
 
-talk.html: $(talk-file) reveal.js filters/transform-notes.py
+talk.html: $(talk-file) reveal.js
 	pandoc --standalone --slide-level=2 --to revealjs --css style.css \
 		-S -o $@ $<
 
-talk.tex: $(talk-file) filters/transform-notes-beamer.py
+talk.tex: $(talk-file)
 	pandoc --standalone --slide-level=2 --to beamer -o $@ $<
 
-talk.pdf: $(talk-file) filters/transform-notes-beamer.py
+talk.pdf: $(talk-file)
 	pandoc --standalone --slide-level=2 --to beamer \
 		--latex-engine=xelatex \
 		-o $@ $<
 
-talk-notes.pdf: $(talk-file) filters/transform-notes-beamer.py
+talk-notes.pdf: $(talk-file)
 	pandoc --standalone --slide-level=2 --to beamer \
 		--latex-engine=xelatex \
 		--metadata='classoption:notes=only' \
